@@ -200,3 +200,50 @@ export const navItems: NavItem[] = [
     url: "/contact",
   },
 ];
+export const featuredCourses = [
+  {
+    title: 'COMPUTER SCIENCE',
+    description: 'Learn computer science fundamentals and advanced programming concepts',
+    icon: '💻'
+  },
+  {
+    title: 'BUSINESS ADMINISTRATION',
+    description: 'Study business principles, management, and organizational leadership',
+    icon: '📊'
+  },
+  {
+    title: 'MASS COMMUNICATION',
+    description: 'Explore media, journalism, and modern communication techniques',
+    icon: '📱'
+  },
+  {
+    title: 'SOCIAL MEDIA',
+    description: 'Master social media marketing and digital communication strategies',
+    icon: '🤝'
+  },
+  {
+    title: 'BS MATHEMATICS',
+    description: 'Dive deep into mathematical theories and practical applications',
+    icon: '📐'
+  },
+  {
+    title: 'BA LLB',
+    description: 'Study law and legal frameworks in a comprehensive program',
+    icon: '⚖️'
+  }
+];
+
+export const aboutItems: AboutItem[] = [
+  {
+    title: "About Samburu West TVC",
+    imageUrl: "/assets/images/courses.jpg",
+    text: "Learn more about our mission, vision, and commitment to providing quality technical and vocational education.",
+    url: "/about",
+  },
+  {
+    title: "Student Life",
+    imageUrl: "/assets/images/student_life.jpg",
+    text: "Discover a vibrant student community with extracurricular activities, clubs, and events that make learning exciting.",
+    url: "/student_life",
+  },
+];

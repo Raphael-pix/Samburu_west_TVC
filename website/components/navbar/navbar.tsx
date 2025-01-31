@@ -60,7 +60,7 @@ const Navbar = () => {
               width={80}
               height={80}
               alt="Tvet Logo"
-              className="w-auto h-auto max-w-[80px] md:max-w-[100px] lg:max-w-[120px] object-contain"
+              className="w-auto h-auto max-w-[60px] md:max-w-[100px] lg:max-w-[120px] object-contain"
             />
           </Link>
 

@@ -6,43 +6,13 @@ import Footer from '@/components/footer';
 import VideoSection from './_components/video';
 import EventCard from './_components/event_card';
 import Navbar from '@/components/navbar/navbar';
+import { featuredCourses } from '@/constants';
+import StatsSection from './_components/statistics';
 
 
 
 // Main Component
 const LandingPage = () => {
-  const featuredCourses = [
-    {
-      title: 'COMPUTER SCIENCE',
-      description: 'Learn computer science fundamentals and advanced programming concepts',
-      icon: '💻'
-    },
-    {
-      title: 'BUSINESS ADMINISTRATION',
-      description: 'Study business principles, management, and organizational leadership',
-      icon: '📊'
-    },
-    {
-      title: 'MASS COMMUNICATION',
-      description: 'Explore media, journalism, and modern communication techniques',
-      icon: '📱'
-    },
-    {
-      title: 'SOCIAL MEDIA',
-      description: 'Master social media marketing and digital communication strategies',
-      icon: '🤝'
-    },
-    {
-      title: 'BS MATHEMATICS',
-      description: 'Dive deep into mathematical theories and practical applications',
-      icon: '📐'
-    },
-    {
-      title: 'BA LLB',
-      description: 'Study law and legal frameworks in a comprehensive program',
-      icon: '⚖️'
-    }
-  ];
 
   const upcomingEvents = [
     { date: '10', month: 'JAN', title: 'Workshop FMP' },
@@ -55,7 +25,7 @@ const LandingPage = () => {
       <Navbar/>
       <HeroSection />
       <AboutSection />
-      
+      <StatsSection/>
       <div className="container mx-auto px-6 py-16">
         <h2 className="text-2xl font-semibold mb-8">FEATURED COURSES</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

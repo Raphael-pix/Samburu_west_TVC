@@ -12,3 +12,10 @@ interface NavItem {
     items: SectionItems[];
   }>;
 }
+
+interface AboutItem {
+  title: string,
+  imageUrl: string,
+  text: string,
+  url?: string,
+}
