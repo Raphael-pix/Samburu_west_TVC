@@ -258,3 +258,9 @@ export const aboutItems: AboutItem[] = [
     url: "/student_life",
   },
 ];
+
+export const upcomingEvents = [
+  { date: '10', month: 'JAN', title: 'Workshop FMP' },
+  { date: '15', month: 'JAN', title: 'Workshop FMP' },
+  { date: '20', month: 'JAN', title: 'Workshop FMP' }
+];
