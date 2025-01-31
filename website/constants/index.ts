@@ -202,35 +202,46 @@ export const navItems: NavItem[] = [
 ];
 export const featuredCourses = [
   {
-    title: 'COMPUTER SCIENCE',
-    description: 'Learn computer science fundamentals and advanced programming concepts',
-    icon: '💻'
+    title: "COMPUTER SCIENCE",
+    description:
+      "Learn computer science fundamentals and advanced programming concepts",
+    icon: "/assets/icons/computers.svg",
+    backgroundImage: "/assets/images/computer-science.jpg",
   },
   {
-    title: 'BUSINESS ADMINISTRATION',
-    description: 'Study business principles, management, and organizational leadership',
-    icon: '📊'
+    title: "BUSINESS ADMINISTRATION",
+    description:
+      "Study business principles, management, and organizational leadership",
+    icon: "/assets/icons/business.svg",
+    backgroundImage: "/assets/images/business.webp",
   },
   {
-    title: 'MASS COMMUNICATION',
-    description: 'Explore media, journalism, and modern communication techniques',
-    icon: '📱'
+    title: "MASS COMMUNICATION",
+    description:
+      "Explore media, journalism, and modern communication techniques",
+    icon: "/assets/icons/communications.svg",
+    backgroundImage: "/assets/images/mass-communication.jpg",
   },
   {
-    title: 'SOCIAL MEDIA',
-    description: 'Master social media marketing and digital communication strategies',
-    icon: '🤝'
+    title: "SOCIAL MEDIA",
+    description:
+      "Master social media marketing and digital communication strategies",
+    icon: "/assets/icons/media.svg",
+    backgroundImage: "/assets/images/social-media.webp",
   },
   {
-    title: 'BS MATHEMATICS',
-    description: 'Dive deep into mathematical theories and practical applications',
-    icon: '📐'
+    title: "BS MATHEMATICS",
+    description:
+      "Dive deep into mathematical theories and practical applications",
+    icon: "/assets/icons/mathematics.svg",
+    backgroundImage: "/assets/images/mathematics.jpg",
   },
   {
-    title: 'BA LLB',
-    description: 'Study law and legal frameworks in a comprehensive program',
-    icon: '⚖️'
-  }
+    title: "BA LLB",
+    description: "Study law and legal frameworks in a comprehensive program",
+    icon: "/assets/icons/law.svg",
+    backgroundImage: "/assets/images/law.jpg",
+  },
 ];
 
 export const aboutItems: AboutItem[] = [
