@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Samburu west TVC",
   description: "Website for Samburu west TVC Kenya",
-  icons: "/favicon.ico",
+  icons: {
+    icon:"/favicon.png",
+    shortcut:"/favicon.png"
+  },
 };
 
 export default function RootLayout({
