@@ -1,14 +1,13 @@
 "use client";
+import { GraduationCap, School, User, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 import CountUp from "react-countup";
-import { FaGraduationCap, FaUserTie } from "react-icons/fa";
-import { MdSchool, MdGroups } from "react-icons/md";
 
 const stats = [
-  { icon: <MdSchool size={50} />, value: 107, label: "Total Programmes" },
-  { icon: <MdGroups size={50} />, value: 13000, label: "Students Enrolled" },
-  { icon: <FaUserTie size={50} />, value: 300, label: "Certified Trainers" },
-  { icon: <FaGraduationCap size={50} color="yellow" />, value: 17000, label: "Total Graduates" },
+  { icon: <School size={50} />, value: 107, label: "Total Programmes" },
+  { icon: <Users size={50} />, value: 13000, label: "Students Enrolled" },
+  { icon: <User size={50} />, value: 300, label: "Certified Trainers" },
+  { icon: <GraduationCap size={50} color="yellow" />, value: 17000, label: "Total Graduates" },
 ];
 
 export default function StatsSection() {
