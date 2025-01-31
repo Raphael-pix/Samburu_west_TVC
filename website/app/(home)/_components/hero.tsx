@@ -17,7 +17,7 @@ const HeroSection = () => {
             <h1 className="text-4xl font-bold mb-6 uppercase lg:text-5xl">
               are you ready
               <br />
-              to apply?
+              to kickstart your career?
             </h1>
             <p className="mb-8 max-w-2xl text-base lg:text-lg ">
             Take the first step toward a brighter future! Join our school and gain the skills, knowledge, and hands-on experience you need to succeed. Apply today and start your journey to excellence!
@@ -26,7 +26,7 @@ const HeroSection = () => {
               className="bg-red-600 text-white px-8 py-3 rounded-md uppercase hover:bg-red-700 transition-all 
 duration-300 hover:shadow-lg transform hover:scale-105"
             >
-              get started now
+              apply now
             </button>
           </div>
         </div>
