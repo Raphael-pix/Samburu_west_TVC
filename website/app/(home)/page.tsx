@@ -51,7 +51,7 @@ const LandingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="overflow-hidden bg-white">
       <Navbar/>
       <HeroSection />
       <AboutSection />
