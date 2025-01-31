@@ -5,6 +5,7 @@ import CourseCard from './_components/course_card';
 import Footer from '@/components/footer';
 import VideoSection from './_components/video';
 import EventCard from './_components/event_card';
+import Navbar from '@/components/navbar/navbar';
 
 
 
@@ -51,6 +52,7 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navbar/>
       <HeroSection />
       <AboutSection />
       

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hidden-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @layer base {
+  :root {
+        --radius: 0.5rem;
+    }
+}
