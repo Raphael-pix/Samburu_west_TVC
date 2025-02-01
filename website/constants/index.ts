@@ -15,33 +15,8 @@ export const navItems: NavItem[] = [
             url: "/about/our_history",
           },
           {
-            title: "Mission & Vision",
-            url: "/about/mission",
-          },
-          {
             title: "Leadership",
             url: "/about/leadership",
-          },
-          {
-            title: "Campus Life",
-            url: "/about/campus_life",
-          },
-        ],
-      },
-      {
-        section: "Community",
-        items: [
-          {
-            title: "Student Stories",
-            url: "/about/student_stories",
-          },
-          {
-            title: "Alumni Network",
-            url: "/about/alumni_network",
-          },
-          {
-            title: "Partners",
-            url: "/about/patners",
           },
           {
             title: "News & Events",
@@ -485,24 +460,28 @@ export const events = [
   {
     id: 4,
     title: "The Impact of React on Modern Web Development",
+    location: "Nairobi, Kenya",
     time: "June 2, 2024",
     image: "/assets/images/hero-image.jpeg",
   },
   {
     id: 5,
     title: "Top Web Development Frameworks for 2025",
+    location: "Nairobi, Kenya",
     time: "November 21, 2024",
     image: "/assets/images/hero-image.jpeg",
   },
   {
     id: 6,
     title: "New Events in Web Development Frameworks and Tools 2025",
+    location: "Nairobi, Kenya",
     time: "November 24, 2024",
     image: "/assets/images/hero-image.jpeg",
   },
   {
     id: 7,
     title: "Top 5 Web Development Frameworks to Watch in 2025",
+    location: "Nairobi, Kenya",
     time: "November 25, 2024",
     image: "/assets/images/hero-image.jpeg",
   },

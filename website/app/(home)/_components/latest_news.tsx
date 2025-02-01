@@ -41,7 +41,7 @@ const LatestNews = () => {
 
         {/* See All News Button */}
         <div className="px-6 py-4 border-t">
-          <a href="/news" className="text-blue-600 font-medium">
+          <a href="/about/news" className="text-blue-600 font-medium">
             SEE ALL NEWS →
           </a>
         </div>
