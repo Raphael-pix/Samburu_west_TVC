@@ -291,3 +291,72 @@ export const coreValues = [
     icon:"/assets/icons/teamwork.svg"
   },
 ]
+
+export const timelineData:TimelineProps[] = [
+  {
+    year: "1950",
+    title: "School Foundation",
+    icon: "/assets/icons/building.svg",
+    description: "Our institution was founded with a vision to provide quality education to all. The first building was established in the heart of the city.",
+    color: "text-yellow-500",
+    bgColor: "bg-yellow-100",
+    details: [
+      "Initial enrollment of 50 students",
+      "5 dedicated teaching staff members",
+      "First building constructed on 2 acres of land",
+      "Focused on primary education"
+    ],
+    image: "/api/placeholder/400/300"
+  },
+  {
+    year: "1960",
+    title: "First Graduation",
+    icon: "/assets/icons/graduation.svg",
+    description: "Celebrated our first graduating class with 100 students. This marked a significant milestone in our journey.",
+    color: "text-blue-500",
+    bgColor: "bg-blue-100",
+    details: [
+      "100% graduation rate",
+      "85% college acceptance rate",
+      "Established alumni association",
+      "Started scholarship program"
+    ],
+    image: "/api/placeholder/400/300"
+  },
+  {
+    year: "1975",
+    title: "Campus Expansion",
+    icon: "/assets/icons/building-2.svg",
+    description: "Added new facilities including a state-of-the-art library and science laboratories.",
+    color: "text-green-500",
+    bgColor: "bg-green-100",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    year: "1990",
+    title: "Sports Excellence",
+    icon: "/assets/icons/trophy.svg",
+    description: "Established our sports complex and started our athletics program, which has since won numerous state championships.",
+    color: "text-purple-500",
+    bgColor: "bg-purple-100",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    year: "2010",
+    title: "Digital Revolution",
+    icon: "/assets/icons/book.svg",
+    description: "Integrated technology into our curriculum and launched our first computer science program.",
+    color: "text-red-500",
+    bgColor: "bg-red-100",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    year: "2024",
+    title: "Modern Era",
+    icon: "/assets/icons/users.svg",
+    description: "Achieved recognition as one of the top educational institutions in the region, serving over 5000 students.",
+    color: "text-indigo-500",
+    bgColor: "bg-indigo-100",
+    image: "/api/placeholder/400/300"
+  }
+];

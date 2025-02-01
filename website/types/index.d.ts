@@ -1,3 +1,4 @@
+
 // Nav items types
 interface SectionItems {
   title: string;
@@ -18,4 +19,15 @@ interface AboutItem {
   imageUrl: string,
   text: string,
   url?: string,
+}
+
+interface TimelineProps {
+  year:string;
+  title:string;
+  icon: string;
+  description: string;
+  color:string;
+  bgColor: string;
+  details?:string[];
+  image?:string;
 }
