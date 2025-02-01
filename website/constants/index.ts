@@ -360,3 +360,22 @@ export const timelineData:TimelineProps[] = [
     image: "/api/placeholder/400/300"
   }
 ];
+
+export const leaders = [
+  { name: "Jane Doe", title: "CEO", image: "/assets/images/logo.png" },
+  {
+    name: "John Smith",
+    title: "CTO",
+    image: "/assets/images/logo.png",
+  },
+  {
+    name: "Alice Johnson",
+    title: "CFO",
+    image: "/assets/images/logo.png",
+  },
+  {
+    name: "Bob Williams",
+    title: "COO",
+    image: "/assets/images/logo.png",
+  },
+];
