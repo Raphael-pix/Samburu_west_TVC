@@ -264,3 +264,30 @@ export const upcomingEvents = [
   { date: '15', month: 'JAN', title: 'Workshop FMP' },
   { date: '20', month: 'JAN', title: 'Workshop FMP' }
 ];
+
+export const coreValues = [
+  {
+    title:"Accountability",
+    icon:"/assets/icons/accountability.svg"
+  },
+  {
+    title:"Integrity",
+    icon:"/assets/icons/integrity.svg"
+  },
+  {
+    title:"Diligence",
+    icon:"/assets/icons/dilligence.svg"
+  },
+  {
+    title:"Transparency",
+    icon:"/assets/icons/transparency.svg"
+  },
+  {
+    title:"Hardwork",
+    icon:"/assets/icons/hardwork.svg"
+  },
+  {
+    title:"Teamwork",
+    icon:"/assets/icons/teamwork.svg"
+  },
+]

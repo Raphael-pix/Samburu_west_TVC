@@ -29,7 +29,7 @@ const RequestSection = () => {
         Detailed information, brochures and forms can be mailed to you upon
         request
       </h2>
-      <p className="h-[8rem] text-sm text-gray-600 px-2 mb-6 overflow-hidden">
+      <p className="h-[125px] text-sm text-gray-600 px-2 mb-6 overflow-hidden">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique purus eu pellentesque blandit. Mauris eget sapien vitae nisl vestibulum maximus aliquet vitae neque. Morbi commodo eu mauris cursus congue.Aenean quis neque quam.
       </p>
       <button
