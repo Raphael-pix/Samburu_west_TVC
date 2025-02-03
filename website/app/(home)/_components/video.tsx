@@ -1,24 +1,10 @@
 "use client";
 
+import { icons } from "@/constants";
 import { Play } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-
-const icons = [
-  {
-    title: "instagram",
-    icon: "/assets/icons/instagram.svg",
-  },
-  {
-    title: "twitter",
-    icon: "/assets/icons/twitter.svg",
-  },
-  {
-    title: "linkedin",
-    icon: "/assets/icons/linkedin.svg",
-  },
-];
 
 const VideoSection = () => {
   const [isHovered, setIsHovered] = useState(false);

@@ -29,50 +29,6 @@ export const navItems: NavItem[] = [
   {
     title: "Academics",
     url: "/academics",
-    links: [
-      {
-        section: "Programs",
-        items: [
-          {
-            title: "Undergraduate",
-            url: "/academics/undergraduate",
-          },
-          {
-            title: "Graduate",
-            url: "/academics/graduate",
-          },
-          {
-            title: "Online Learning",
-            url: "/academics/online_learning",
-          },
-          {
-            title: "Professional Certificates",
-            url: "/academics/certificates",
-          },
-        ],
-      },
-      {
-        section: "Resources",
-        items: [
-          {
-            title: "Academic Calendar",
-            url: "/academics/academic_calender",
-          },
-          {
-            title: "Library",
-            url: "/academics/library",
-          },
-          {
-            title: "Research Centers",
-            url: "/academics/research_Centers",
-          },
-          {
-            title: "Faculty Directory",
-            url: "/academics/faculty_directory",
-          },
-        ],
-      },
-    ],
   },
   {
     title: "Admissions",
@@ -84,41 +40,13 @@ export const navItems: NavItem[] = [
           {
             title: "Application Process",
             url: "/admissions/application_process",
+            
           },
-          {
-            title: "Requirements",
-            url: "/admissions/requirements",
-          },
-          {
-            title: "Deadlines",
-            url: "/admissions/deadlines",
-          },
-          {
-            title: "Transfer Credits",
-            url: "/admissions/transfer_credits",
-          },
-        ],
-      },
-      {
-        section: "Financial",
-        items: [
           {
             title: "Tuition & Fees",
             url: "/admissions/tuition",
           },
-          {
-            title: "Scholarships",
-            url: "/admissions/scholarships",
-          },
-          {
-            title: "Financial Aid",
-            url: "/admissions/financial_aid",
-          },
-          {
-            title: "Payment Plans",
-            url: "/admissions/payment",
-          },
-        ],
+        ]
       },
     ],
   },
@@ -134,33 +62,8 @@ export const navItems: NavItem[] = [
             url: "/student_life/housing",
           },
           {
-            title: "Dining",
-            url: "/student_life/dining",
-          },
-          {
-            title: "Athletics",
-            url: "/student_life/athletics",
-          },
-          {
-            title: "Health Services",
-            url: "/student_life/health_services",
-          },
-        ],
-      },
-      {
-        section: "Activities",
-        items: [
-          {
             title: "Clubs & Organizations",
             url: "/student_life/clubs",
-          },
-          {
-            title: "Events",
-            url: "/student_life/events",
-          },
-          {
-            title: "Career Services",
-            url: "/student_life/career_services",
           },
           {
             title: "Student Support",
@@ -173,6 +76,20 @@ export const navItems: NavItem[] = [
   {
     title: "Contact",
     url: "/contact",
+  },
+];
+export const icons = [
+  {
+    title: "instagram",
+    icon: "/assets/icons/instagram.svg",
+  },
+  {
+    title: "twitter",
+    icon: "/assets/icons/twitter.svg",
+  },
+  {
+    title: "linkedin",
+    icon: "/assets/icons/linkedin.svg",
   },
 ];
 export const featuredCourses = [
@@ -218,7 +135,6 @@ export const featuredCourses = [
     backgroundImage: "/assets/images/law.jpg",
   },
 ];
-
 export const aboutItems: AboutItem[] = [
   {
     title: "About Samburu West TVC",
@@ -233,13 +149,11 @@ export const aboutItems: AboutItem[] = [
     url: "/student_life",
   },
 ];
-
 export const upcomingEvents = [
   { date: "10", month: "JAN", title: "Workshop FMP" },
   { date: "15", month: "JAN", title: "Workshop FMP" },
   { date: "20", month: "JAN", title: "Workshop FMP" },
 ];
-
 export const coreValues = [
   {
     title: "Accountability",
@@ -266,7 +180,6 @@ export const coreValues = [
     icon: "/assets/icons/teamwork.svg",
   },
 ];
-
 export const timelineData: TimelineProps[] = [
   {
     year: "1950",
@@ -341,7 +254,6 @@ export const timelineData: TimelineProps[] = [
     image: "/api/placeholder/400/300",
   },
 ];
-
 export const leaders = [
   { name: "Jane Doe", title: "CEO", image: "/assets/images/logo.png" },
   {
@@ -360,7 +272,6 @@ export const leaders = [
     image: "/assets/images/logo.png",
   },
 ];
-
 export const articles = [
   {
     id: 1,
@@ -434,7 +345,6 @@ export const articles = [
     image: "/assets/images/hero-image.jpeg",
   },
 ];
-
 export const events = [
   {
     id: 1,
