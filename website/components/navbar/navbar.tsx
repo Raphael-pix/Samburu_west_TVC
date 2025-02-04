@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Menu, X, ChevronDown, Search, User, Bell } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { navItems } from "@/constants";
 import SearchOverlay from "./search";
 import AuthModal from "./auth";
@@ -15,6 +16,7 @@ const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -191,7 +193,7 @@ const Navbar = () => {
                 >
                   <button
                     className="w-full flex justify-between items-center py-3 text-gray-700 hover:text-blue-900 transition-colors"
-                    onClick={() => handleDropdown(item.title)}
+                    onClick={item.links ? () => handleDropdown(item.title): ()=>router.push(item.url)}
                   >
                     <span className="font-medium">{item.title}</span>
                     {item.links && (
@@ -209,18 +211,15 @@ const Navbar = () => {
                     <div className="pl-4 pb-3">
                       {item.links.map((section) => (
                         <div key={section.section} className="mb-4 last:mb-0">
-                          <h3 className="text-sm font-semibold text-blue-900 mb-2">
-                            {section.section}
-                          </h3>
                           <ul className="space-y-2">
                             {section.items.map((link) => (
                               <li key={link.title}>
-                                <a
+                                <Link
                                   href={link.url}
                                   className="block py-1 text-sm text-gray-600 hover:text-blue-900 transition-colors"
                                 >
                                   {link.title}
-                                </a>
+                                </Link>
                               </li>
                             ))}
                           </ul>
