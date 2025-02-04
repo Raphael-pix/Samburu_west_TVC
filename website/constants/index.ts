@@ -33,45 +33,6 @@ export const navItems: NavItem[] = [
   {
     title: "Admissions",
     url: "/admissions",
-    links: [
-      {
-        section: "Apply",
-        items: [
-          {
-            title: "Application Process",
-            url: "/admissions/application_process",
-            
-          },
-          {
-            title: "Tuition & Fees",
-            url: "/admissions/tuition",
-          },
-        ]
-      },
-    ],
-  },
-  {
-    title: "Student Life",
-    url: "/student_life",
-    links: [
-      {
-        section: "Campus",
-        items: [
-          {
-            title: "Housing",
-            url: "/student_life/housing",
-          },
-          {
-            title: "Clubs & Organizations",
-            url: "/student_life/clubs",
-          },
-          {
-            title: "Student Support",
-            url: "/student_life/student_support",
-          },
-        ],
-      },
-    ],
   },
   {
     title: "Contact",

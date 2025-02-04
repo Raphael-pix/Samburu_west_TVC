@@ -83,7 +83,7 @@ const Navbar = () => {
 
                 {/* Mega Menu Dropdown */}
                 {item.links && (
-                  <div className="absolute left-0 mt-2 min-w-[300px] max-w-[600px] bg-white border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                  <div className="absolute left-0 mt-2 min-w-[240px] max-w-[600px] bg-white border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                     <div className="p-6 grid grid-cols-1 gap-8">
                       {item.links.map((section) => (
                         <div key={section.section}>

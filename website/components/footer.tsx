@@ -11,8 +11,8 @@ const Footer = () => {
             <p>+254 742 204 9247</p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {["ADMISSIONS", "PROJECTS", "DOWNLOADS", "FACILITIES"].map(
+          <div className="grid grid-cols-2 gap-8">
+            {["Quick links" ].map(
               (title, index) => (
                 <div
                   key={index}
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Contact us</h4>
+            <h4 className="font-semibold mb-4">Join our newsletter</h4>
             <input
               type="email"
               placeholder="Enter Your Email"

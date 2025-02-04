@@ -1,13 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import TimelineItem from "./_componets/timeline_item";
-import DetailModal from "./_componets/detail_modal";
 import { timelineData } from "@/constants";
 
 const SchoolTimeline = () => {
-  const [selectedItem, setSelectedItem] = useState<TimelineProps | null>(null);
 
   return (
     <div className="bg-white overflow-hidden">
@@ -61,20 +59,11 @@ const SchoolTimeline = () => {
                 key={item.year}
                 item={item}
                 index={index}
-                onSelect={setSelectedItem}
               />
             ))}
           </div>
         </div>
 
-        <AnimatePresence>
-          {selectedItem && (
-            <DetailModal
-              item={selectedItem}
-              onClose={() => setSelectedItem(null)}
-            />
-          )}
-        </AnimatePresence>
       </div>
     </div>
   );

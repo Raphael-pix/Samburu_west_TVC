@@ -7,7 +7,7 @@ import Image from "next/image";
 import { icons } from "@/constants";
 import { Mail, Phone } from "lucide-react";
 
-export default function ContactPage() {
+const ContactPage = () => {
   return (
     <main className="bg-white overflow-hidden">
       <div className="grid md:grid-cols-2 gap-8">
@@ -60,3 +60,5 @@ export default function ContactPage() {
     </main>
   );
 }
+
+export default ContactPage;
