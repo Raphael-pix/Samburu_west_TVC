@@ -9,6 +9,16 @@ const NewsPage = () => {
     <div className="min-h-screen bg-white">
       <EventsCarousel />
       <div className="px-6 p-2 mb-4 mt-2">
+        <h1 className="text-3xl font-bold">Upcoming events</h1>
+      </div>
+      <div
+        className="mx-auto px-6 pb-6 w-full flex items-center gap-4 overflow-hidden overflow-x-scroll hidden-scrollbar whitespace-nowrap"
+      >
+        {events.map((event) => (
+          <EventItem key={event.id} event={event} />
+        ))}
+      </div>
+      <div className="px-6 p-2 mb-4 mt-2">
         <h1 className="text-3xl font-bold">Latest News</h1>
       </div>
       <div className=" mx-auto px-6 pb-6">
@@ -17,14 +27,6 @@ const NewsPage = () => {
             <ArticleItem key={article.id} article={article} />
           ))}
         </div>
-      </div>
-      <div className="px-6 p-2 mb-4 mt-2">
-        <h1 className="text-3xl font-bold">Upcoming events</h1>
-      </div>
-      <div className="mx-auto px-6 pb-6 w-full flex items-center gap-4 overflow-hidden overflow-x-scroll hidden-scrollbar whitespace-nowrap">
-        {events.map((event) => (
-          <EventItem key={event.id} event={event} />
-        ))}
       </div>
     </div>
   );
