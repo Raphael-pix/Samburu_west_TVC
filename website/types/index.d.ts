@@ -39,3 +39,32 @@ interface ContactFormData {
   subject: string;
   message: string;
 }
+
+interface PersonalFormData {
+  firstName: string;
+  middleName: string;
+  surname: string;
+  disable: boolean;
+  title: string;
+  gender: string;
+  nationality: string;
+  ethnicity: string;
+  kcse: string;
+  kcpe: string;
+  county: string;
+  dob:Date | null;
+  intake:string;
+  programme_type:string;
+  stage:string;
+  programme:string;
+  address:string;
+  phoneNumber:string;
+  postalCode:string;
+  email:string;
+  town:string;
+}
+
+interface SelectOption {
+  value: string;
+  label: string;
+}

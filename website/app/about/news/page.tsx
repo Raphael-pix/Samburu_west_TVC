@@ -6,7 +6,7 @@ import EventItem from "./_components/event_item";
 
 const NewsPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white overflow-hidden">
       <EventsCarousel />
       <div className="px-6 p-2 mb-4 mt-2">
         <h1 className="text-3xl font-bold">Upcoming events</h1>
