@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -11,28 +12,29 @@ const Footer = () => {
             <p>+254 742 204 9247</p>
           </div>
 
-          <div className="grid grid-cols-2 gap-8">
-            {["Quick links" ].map(
-              (title, index) => (
-                <div
-                  key={index}
-                  className="transform transition-all duration-500 hover:translate-y-[-10px]"
-                >
-                  <h4 className="font-semibold mb-4">{title}</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
-                      Process
-                    </li>
-                    <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
-                      Structure
-                    </li>
-                    <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
-                      Resources
-                    </li>
-                  </ul>
-                </div>
-              )
-            )}
+          <div className="grid grid-cols-1 gap-8">
+            {["Quick links"].map((title, index) => (
+              <div
+                key={index}
+                className="transform transition-all duration-500 hover:translate-y-[-10px]"
+              >
+                <h4 className="font-semibold mb-4">{title}</h4>
+                <ul className="space-y-2 text-sm">
+                  <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
+                    <Link href="/about">About</Link>
+                  </li>
+                  <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
+                    <Link href="/academics">Academics</Link>
+                  </li>
+                  <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
+                    <Link href="/apply">Apply</Link>
+                  </li>
+                  <li className="transition-all duration-300 hover:text-blue-300 cursor-pointer">
+                    <Link href="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </div>
+            ))}
           </div>
 
           <div>

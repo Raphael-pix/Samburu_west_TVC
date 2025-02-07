@@ -82,7 +82,7 @@ const ModelProfileSetup = () => {
         return <ContactForm formData={formData} setFormData={setFormData} />;
 
       case 4:
-        return <DocumentUploadForm onSelectChange={onSelectChange} />;
+        return <DocumentUploadForm />;
 
       default:
         return null;
