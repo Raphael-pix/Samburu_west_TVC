@@ -28,6 +28,28 @@ const CourseForm = ({ onSelectChange }: CourseFormProps) => {
       </div>
       <div className="space-y-2">
         <label className="text-sm font-semibold text-gray-900 mb-1">
+          Programme/Course
+        </label>
+        <Select
+          name="programme"
+          options={programmes}
+          onChange={(selectedOption) =>
+            onSelectChange("programme", selectedOption)
+          }
+          placeholder="Select your intake"
+          className="basic-single"
+          classNamePrefix="select"
+          instanceId="programme-select"
+          styles={{
+            menuList: (provided) => ({
+              ...provided,
+              height: 150, // Set a high value to make sure it's above other elements
+            }),
+          }}
+        />
+      </div>
+      <div className="space-y-2">
+        <label className="text-sm font-semibold text-gray-900 mb-1">
           Programme Type
         </label>
         <Select
@@ -54,22 +76,12 @@ const CourseForm = ({ onSelectChange }: CourseFormProps) => {
           className="basic-single"
           classNamePrefix="select"
           instanceId="stage-select"
-        />
-      </div>
-      <div className="space-y-2">
-        <label className="text-sm font-semibold text-gray-900 mb-1">
-          Programme/Course
-        </label>
-        <Select
-          name="programme"
-          options={programmes}
-          onChange={(selectedOption) =>
-            onSelectChange("programme", selectedOption)
-          }
-          placeholder="Select your intake"
-          className="basic-single"
-          classNamePrefix="select"
-          instanceId="programme-select"
+          styles={{
+            menuList: (provided) => ({
+              ...provided,
+              height: 90, // Set a high value to make sure it's above other elements
+            }),
+          }}
         />
       </div>
     </div>
