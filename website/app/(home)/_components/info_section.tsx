@@ -94,8 +94,7 @@ const StoriesSection = () => {
     </div>
   </div>
 
-  {/* Carousel wrapper with fixed height */}
-  <div className="relative w-full h-[280px] overflow-hidden">
+  <div className="relative w-full h-[300px] overflow-hidden">
     {stories.map((story, index) => (
       <div
         key={story.id}
@@ -104,7 +103,6 @@ const StoriesSection = () => {
           index === currentSlide ? "opacity-100" : "opacity-0"
         )}
       >
-        {/* Ensure image wrapper has a height */}
         <div className="h-[200px] mb-4 lg:h-[180]">
           <Image
             src={story.imageUrl}
