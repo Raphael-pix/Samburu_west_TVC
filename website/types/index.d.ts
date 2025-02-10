@@ -18,7 +18,7 @@ interface AboutItem {
   title: string,
   imageUrl: string,
   text: string,
-  url?: string,
+  url: string,
 }
 
 interface TimelineProps {

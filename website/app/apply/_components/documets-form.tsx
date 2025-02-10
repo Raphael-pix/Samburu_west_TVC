@@ -8,7 +8,6 @@ interface DocumentFormProps {
 }
 
 const DocumentUploadForm = ({formData,setFormData}:DocumentFormProps) => {
-  console.log(formData.birthCertificate)
   return (
     <div className="space-y-4">
       <Alert className="bg-blue-50 text-blue-800 border-blue-200">

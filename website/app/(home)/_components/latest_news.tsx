@@ -35,7 +35,7 @@ const LatestNews = () => {
   ];
 
   return (
-    <section className="hidden container mx-auto px-6 absolute -top-[52px] right-12 z-50 lg:block">
+    <section className="hidden container mx-auto px-6 absolute -top-[52px] right-12 lg:block">
       <div className="bg-white shadow-lg rounded-lg overflow-hidden max-w-[20rem] ml-auto">
         {/* Title Section */}
         <div className="bg-blue-600 text-white text-lg font-semibold py-3 px-6">

@@ -8,7 +8,7 @@ interface SearchOverlayProps {
 
 const SearchOverlay: React.FC<SearchOverlayProps> = ({ setIsSearchOpen }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+    <div className="fixed inset-0 h-[100dvh] bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
       <div className="bg-white w-full max-w-2xl mx-4 rounded-lg shadow-lg overflow-hidden">
         <div className="p-4 flex items-center border-b">
           <Search size={20} className="text-gray-400" />

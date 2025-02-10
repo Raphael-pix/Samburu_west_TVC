@@ -512,3 +512,35 @@ export const programmes = [
   { value: "occupational_safety_and_health", label: "Occupational Safety and Health" },
   { value: "automotive_mechatronics", label: "Automotive Mechatronics" },
 ].sort((a, b) => a.label.localeCompare(b.label));
+export const studentActivities = [
+  {
+    title: "Student Clubs",
+    icon: "/assets/icons/clubs.svg",
+    description: "Join over 50+ student-led organizations ranging from academic clubs to cultural societies"
+  },
+  {
+    title: "Sports & Recreation",
+    icon: "/assets/icons/sports.svg",
+    description: "Participate in intramural sports, fitness classes, and outdoor adventure programs"
+  },
+  {
+    title: "Arts & Culture",
+    icon: "/assets/icons/arts.svg",
+    description: "Express yourself through music, theater, dance, and visual arts programs"
+  },
+  {
+    title: "Leadership",
+    icon: "/assets/icons/leadership.svg",
+    description: "Develop your leadership skills through student government and community service"
+  },
+  {
+    title: "Events",
+    icon: "/assets/icons/events.svg",
+    description: "Enjoy campus-wide events, festivals, and celebrations throughout the year"
+  },
+  {
+    title: "Wellness",
+    icon: "/assets/icons/wellness.svg",
+    description: "Access health services, counseling, and wellness programs for a balanced life"
+  }
+];

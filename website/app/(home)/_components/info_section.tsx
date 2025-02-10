@@ -71,7 +71,6 @@ duration-300 hover:shadow-lg transform hover:scale-105"
 };
 const StoriesSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  console.log(currentSlide)
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % stories.length);
   };
