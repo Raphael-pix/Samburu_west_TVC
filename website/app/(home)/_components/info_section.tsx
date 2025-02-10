@@ -80,50 +80,53 @@ const StoriesSection = () => {
   };
   return (
     <div className="max-w-full bg-white p-6 rounded-xl shadow-md lg:max-w-[20rem]">
-      <div className="flex justify-between items-center border-b pb-4 mb-4">
-        <h1 className="px-2 border-l-2 border-blue-800 font-semibold text-black text-base uppercase">
-          top stories
-        </h1>
-        <div className="flex space-x-2">
-          <button onClick={prevSlide}>
-            <ChevronLeft className="w-5 h-5 text-[#002c74] cursor-pointer" />
-          </button>
-          <button onClick={nextSlide}>
-            <ChevronRight className="w-5 h-5 text-[#002c74] cursor-pointer" />
-          </button>
-        </div>
-      </div>
-
-      <div className="relative  w-full h-full overflow-hidden">
-        {stories.map((story, index) => (
-          <div
-            key={story.id}
-            className={cn(
-              "absolute inset-0",
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            )}
-          >
-            <div className="w-[350] h-[200] mb-4">
-              <Image
-                src={story.imageUrl}
-                alt="Top story"
-                width={350}
-                height={200}
-                className="w-full h-full rounded-lg object-cover"
-              />
-            </div>
-            <p className="text-gray-500 text-sm">{story.date}</p>
-            <h3 className="font-semibold text-lg text-[#002c74] mt-2 line-clamp-2">
-              {story.title}
-            </h3>
-          </div>
-        ))}
-      </div>
-
-      <Link href="/news" className="text-[#002c74] font-semibold mt-2 block">
-        READ MORE →
-      </Link>
+  <div className="flex justify-between items-center border-b pb-4 mb-4">
+    <h1 className="px-2 border-l-2 border-blue-800 font-semibold text-black text-base uppercase">
+      top stories
+    </h1>
+    <div className="flex space-x-2">
+      <button onClick={prevSlide}>
+        <ChevronLeft className="w-5 h-5 text-[#002c74] cursor-pointer" />
+      </button>
+      <button onClick={nextSlide}>
+        <ChevronRight className="w-5 h-5 text-[#002c74] cursor-pointer" />
+      </button>
     </div>
+  </div>
+
+  {/* Carousel wrapper with fixed height */}
+  <div className="relative w-full h-[280px] overflow-hidden">
+    {stories.map((story, index) => (
+      <div
+        key={story.id}
+        className={cn(
+          "absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out",
+          index === currentSlide ? "opacity-100" : "opacity-0"
+        )}
+      >
+        {/* Ensure image wrapper has a height */}
+        <div className="h-[200px] mb-4 lg:h-[180]">
+          <Image
+            src={story.imageUrl}
+            alt="Top story"
+            width={350}
+            height={200}
+            className="w-full h-full rounded-lg object-cover"
+          />
+        </div>
+        <p className="text-gray-500 text-sm">{story.date}</p>
+        <h3 className="font-semibold text-lg text-[#002c74] mt-2 line-clamp-2">
+          {story.title}
+        </h3>
+      </div>
+    ))}
+  </div>
+
+  <Link href="/news" className="text-[#002c74] font-semibold mt-2 block">
+    READ MORE →
+  </Link>
+</div>
+
   );
 };
 
