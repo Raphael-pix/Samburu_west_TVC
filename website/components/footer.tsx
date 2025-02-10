@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-8 px-6 lg:px-18 lg:py-16">
+    <footer className="bg-blue-900 text-white py-8 px-6 lg:px-18 lg:py-14">
       <div className="container px-2 lg:mx-auto lg:px-6">
         <div className="flex items-center justify-between  lg:px-6 lg:gap-8 max-lg:block space-y-8">
           <div>
@@ -38,14 +38,15 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Join our newsletter</h4>
+            <h4 className="font-semibold mb-1">Join our newsletter</h4>
+            <p className="text-sm mb-4"> Get our latest news and updates</p>
             <input
               type="email"
               placeholder="Enter Your Email"
               className="w-full p-2 rounded text-gray-900"
             />
-            <button className="min-w-[8rem] mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-              Send
+            <button className="min-w-[8rem] mt-2 bg-blue-500 hover:bg-blue-600 text-white font-medium px-4 py-2 rounded">
+              Join
             </button>
           </div>
         </div>

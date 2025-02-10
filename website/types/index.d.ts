@@ -62,6 +62,13 @@ interface PersonalFormData {
   postalCode:string;
   email:string;
   town:string;
+  kcpeResults:string;
+  kcseResults:string;
+  leavingCertificate: string;
+  NationalID:string;
+  birthCertificate: string;
+  applicationForm: string;
+  passports: string[];
 }
 
 interface SelectOption {

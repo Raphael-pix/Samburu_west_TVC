@@ -2,7 +2,13 @@ import React from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { EyeClosed } from "lucide-react";
 
-const DocumentUploadForm = () => {
+interface DocumentFormProps {
+  formData: PersonalFormData;
+  setFormData: React.Dispatch<React.SetStateAction<PersonalFormData>>;
+}
+
+const DocumentUploadForm = ({formData,setFormData}:DocumentFormProps) => {
+  console.log(formData.birthCertificate)
   return (
     <div className="space-y-4">
       <Alert className="bg-blue-50 text-blue-800 border-blue-200">
@@ -22,6 +28,9 @@ const DocumentUploadForm = () => {
             type="file"
             className="w-full p-2 border rounded-md"
             accept=".pdf,.jpg,.jpeg,.png"
+            onChange={(e) =>
+              setFormData({ ...formData, kcpeResults: e.target.value })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />
@@ -37,6 +46,9 @@ const DocumentUploadForm = () => {
             type="file"
             className="w-full p-2 border rounded-md"
             accept=".pdf,.jpg,.jpeg,.png"
+            onChange={(e) =>
+              setFormData({ ...formData, kcseResults: e.target.value })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />
@@ -54,6 +66,9 @@ const DocumentUploadForm = () => {
             type="file"
             className="w-full p-2 border rounded-md"
             accept=".pdf,.jpg,.jpeg,.png"
+            onChange={(e) =>
+              setFormData({ ...formData, leavingCertificate: e.target.value })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />
@@ -71,6 +86,9 @@ const DocumentUploadForm = () => {
             type="file"
             className="w-full p-2 border rounded-md"
             accept=".pdf,.jpg,.jpeg,.png"
+            onChange={(e) =>
+              setFormData({ ...formData, NationalID: e.target.value })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />
@@ -88,6 +106,9 @@ const DocumentUploadForm = () => {
             type="file"
             className="w-full p-2 border rounded-md"
             accept=".pdf,.jpg,.jpeg,.png"
+            onChange={(e) =>
+              setFormData({ ...formData, birthCertificate: e.target.value })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />
@@ -105,6 +126,9 @@ const DocumentUploadForm = () => {
             type="file"
             className="w-full p-2 border rounded-md"
             accept=".pdf,.jpg,.jpeg,.png"
+            onChange={(e) =>
+              setFormData({ ...formData, applicationForm: e.target.value })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />
@@ -112,7 +136,7 @@ const DocumentUploadForm = () => {
         </div>
       </div>
 
-      {/* Passport Photos */}
+      {/* Passport Photos fix setformdata*/}
       <div className="space-y-2">
         <label className="text-sm font-semibold text-gray-900 mb-1">
           Passport-sized Photos (2-4 copies) *
@@ -123,6 +147,9 @@ const DocumentUploadForm = () => {
             className="w-full p-2 border rounded-md"
             accept=".jpg,.jpeg,.png"
             multiple
+            onChange={(e) =>
+              setFormData({ ...formData, passports: [e.target.value] })
+            }
           />
           <button className="px-4 py-2">
             <EyeClosed size={16} color="#232323" />

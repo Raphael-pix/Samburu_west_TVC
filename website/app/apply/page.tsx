@@ -46,6 +46,13 @@ const ModelProfileSetup = () => {
     postalCode: "",
     email: "",
     town: "",
+    kcpeResults:"",
+    kcseResults:"",
+    leavingCertificate: "",
+    NationalID: "",
+    birthCertificate:"",
+    applicationForm:"",
+    passports:[],
   });
 
   const totalSteps = 4;
@@ -82,7 +89,7 @@ const ModelProfileSetup = () => {
         return <ContactForm formData={formData} setFormData={setFormData} />;
 
       case 4:
-        return <DocumentUploadForm />;
+        return <DocumentUploadForm formData={formData} setFormData={setFormData} />;
 
       default:
         return null;

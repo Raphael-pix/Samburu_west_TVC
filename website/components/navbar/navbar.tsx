@@ -1,20 +1,18 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { Menu, X, ChevronDown, Search, User, Bell } from "lucide-react";
+import { Menu, X, ChevronDown, Search } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { navItems } from "@/constants";
 import SearchOverlay from "./search";
-import AuthModal from "./auth";
 import Topbar from "./top";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isAuthOpen, setIsAuthOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
@@ -117,16 +115,6 @@ const Navbar = () => {
               className="p-2 text-gray-600 hover:text-blue-900 transition-colors"
             >
               <Search size={20} />
-            </button>
-            <button className="p-2 text-gray-600 hover:text-blue-900 transition-colors relative">
-              <Bell size={20} />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
-            </button>
-            <button
-              onClick={() => setIsAuthOpen(!isAuthOpen)}
-              className="p-2 text-gray-600 hover:text-blue-900 transition-colors"
-            >
-              <User size={20} />
             </button>
           </div>
 
@@ -231,56 +219,12 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          {/* user actions */}
-          <div className="w-full flex flex-col items-center space-y-2 mb-4 pl-4">
-            <button className="min-w-[12rem] px-4 py-2 text-sm bg-blue-900 text-white rounded-md hover:bg-blue-800 transition-colors">
-              Sign In
-            </button>
-            <button className="min-w-[12rem] px-4 py-2 text-sm border border-blue-900 text-blue-900 rounded-md hover:bg-blue-50 transition-colors">
-              Register
-            </button>
-          </div>
-
-          {/* Quick Links */}
-          <div className="mt-6 bg-gray-50 p-4">
-            <h3 className="text-sm font-semibold text-gray-700 mb-3">
-              Quick Links
-            </h3>
-            <div className="space-y-2">
-              <a
-                href="#"
-                className="block text-sm text-gray-600 hover:text-blue-900"
-              >
-                Student Portal
-              </a>
-              <a
-                href="#"
-                className="block text-sm text-gray-600 hover:text-blue-900"
-              >
-                Academic Calendar
-              </a>
-              <a
-                href="#"
-                className="block text-sm text-gray-600 hover:text-blue-900"
-              >
-                Library Resources
-              </a>
-              <a
-                href="#"
-                className="block text-sm text-gray-600 hover:text-blue-900"
-              >
-                Campus Map
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* search overlay */}
       {isSearchOpen && <SearchOverlay setIsSearchOpen={setIsSearchOpen} />}
 
-      {/* Auth Dropdown */}
-      {isAuthOpen && <AuthModal />}
     </nav>
   );
 };

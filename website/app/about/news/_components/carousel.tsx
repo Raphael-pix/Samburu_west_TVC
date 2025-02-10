@@ -9,21 +9,21 @@ const events = [
     title: "Annual Science Fair",
     date: "March 15, 2024",
     description: "Join us for an exciting showcase of student projects and innovations",
-    image: "/api/placeholder/1200/600"
+    image: "/assets/images/computer-science.jpg"
   },
   {
     id: 2,
     title: "Sports Day Championship",
     date: "April 5, 2024",
     description: "A day of athletic excellence and team spirit",
-    image: "/api/placeholder/1200/600"
+    image: "/assets/images/student_life.jpg"
   },
   {
     id: 3,
     title: "Arts & Culture Festival",
     date: "May 20, 2024",
     description: "Celebrating creativity through music, dance, and visual arts",
-    image: "/api/placeholder/1200/600"
+    image: "/assets/images/hero-image.jpeg"
   }
 ];
 
@@ -51,7 +51,6 @@ const EventsCarousel = () => {
 
   return (
     <div className="h-[250px] lg:h-[320px] relative group">
-      {/* Slides */}
       {events.map((event, index) => (
         <div
           key={event.id}
@@ -59,7 +58,6 @@ const EventsCarousel = () => {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          {/* Background Image */}
           <div
             className="absolute inset-0 bg-black/40"
             style={{
@@ -70,7 +68,6 @@ const EventsCarousel = () => {
             }}
           />
           
-          {/* Content Overlay */}
           <div className="absolute inset-0 bg-black/40">
             <div className="h-full flex flex-col justify-center px-6 lg:px-24 text-white">
               <h2 className="text-2xl lg:text-3xl font-bold mb-2">
@@ -87,7 +84,6 @@ const EventsCarousel = () => {
         </div>
       ))}
 
-      {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -106,7 +102,6 @@ const EventsCarousel = () => {
         <ChevronRight className="w-5 h-5" />
       </button>
 
-      {/* Dots Navigation */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
         {events.map((_, index) => (
           <button
