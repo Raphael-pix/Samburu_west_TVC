@@ -13,7 +13,7 @@ const Wrapper = ({ children }: WrapperProps) => {
   return (
     <aside
       className={cn(
-        "absolute left-0 flex flex-col w-[70px] lg:w-60 h-full bg-white z-50 px-2 py-4",
+        "fixed left-0 flex flex-col w-[70px] lg:w-60 h-full bg-white z-50 px-2 py-4 shadow-sm",
         collapsed && "lg:w-[70px]"
       )}
     >

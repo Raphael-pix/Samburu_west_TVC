@@ -10,13 +10,13 @@ const LogoutBtn = () => {
   return (
     <button
       className={cn(
-        "w-full flex items-center gap-3 px-4 py-2 text-red-500 rounded-lg font-medium hover:text-red-600 group relative ",
+        "w-full flex items-center gap-3 px-4 text-red-500 rounded-lg font-medium hover:text-red-600 group relative ",
         collapsed ? "justify-center" : "justify-start"
       )}
     >
       <div className="flex items-center gap-x-4">
         <LogOut className={cn("h-4 w-4", collapsed ? "mr-0" : "mr-2")} />
-        {!collapsed && <span>Logout</span>}
+        {!collapsed && <span className="text-sm">Logout</span>}
       </div>
     </button>
   );

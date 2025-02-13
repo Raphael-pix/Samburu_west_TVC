@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Container from "@/components/container";
 import Sidebar from "@/components/sidebar";
+import Navbar from "@/components/navbar/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,8 +19,8 @@ export const metadata: Metadata = {
   title: "Admin",
   description: "Website for Admin control, Samburu West TVC",
   icons: {
-    icon:"/favicon.png",
-    shortcut:"/favicon.png"
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
   },
 };
 
@@ -34,8 +35,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex relative">
-          <Sidebar/>
-          <Container>{children}</Container>
+          <Sidebar />
+          <Container>
+            <Navbar />
+            {children}
+          </Container>
         </div>
       </body>
     </html>

@@ -27,13 +27,13 @@ const NavItem = ({
     return (
       <button
         className={cn(
-          "w-full flex items-center gap-3 px-4 py-2 text-gray-700 rounded-lg font-medium hover:text-gray-800 group relative ",
+          "w-full flex items-center gap-3 px-4 py-1 text-gray-700 rounded-lg font-medium hover:text-gray-800 group relative ",
           collapsed ? "justify-center" : "justify-start",
         )}
       >
         <div className="flex items-center gap-x-4">
           <Icon className={cn("h-4 w-4", collapsed ? "mr-0" : "mr-2")} />
-          {!collapsed && <span>{label}</span>}
+          {!collapsed && <span className="text-sm">{label}</span>}
         </div>
       </button>
     );
@@ -49,7 +49,7 @@ const NavItem = ({
     >
       <div className="flex items-center gap-x-4">
         <Icon className={cn("h-4 w-4", collapsed ? "mr-0" : "mr-2")} />
-        {!collapsed && <span>{label}</span>}
+        {!collapsed && <span className="text-sm">{label}</span>}
       </div>
     </Link>
   );
