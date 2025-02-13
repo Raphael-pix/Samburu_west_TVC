@@ -15,7 +15,7 @@ const LogoutBtn = () => {
       )}
     >
       <div className="flex items-center gap-x-4">
-        <LogOut className={cn("h-4 w-4", collapsed ? "mr-0" : "mr-2")} />
+        <LogOut className={cn("h-4 w-4 md:h-8 md:w-8", collapsed ? "mr-0" : "mr-2")} />
         {!collapsed && <span className="text-sm">Logout</span>}
       </div>
     </button>

@@ -32,7 +32,7 @@ const NavItem = ({
         )}
       >
         <div className="flex items-center gap-x-4">
-          <Icon className={cn("h-4 w-4", collapsed ? "mr-0" : "mr-2")} />
+          <Icon className={cn("h-4 w-4 md:h-8 md:w-8", collapsed ? "mr-0" : "mr-2")} />
           {!collapsed && <span className="text-sm">{label}</span>}
         </div>
       </button>
@@ -48,7 +48,7 @@ const NavItem = ({
       )}
     >
       <div className="flex items-center gap-x-4">
-        <Icon className={cn("h-4 w-4", collapsed ? "mr-0" : "mr-2")} />
+        <Icon className={cn("h-4 w-4 md:h-6 md:w-6", collapsed ? "mr-0" : "mr-2")} />
         {!collapsed && <span className="text-sm">{label}</span>}
       </div>
     </Link>
