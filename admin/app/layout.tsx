@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Container from "@/components/container";
+import Sidebar from "@/components/sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Admin Samburu West TVC",
+  title: "Admin",
   description: "Website for Admin control, Samburu West TVC",
   icons: {
     icon:"/favicon.png",
@@ -31,7 +33,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex relative">
+          <Sidebar/>
+          <Container>{children}</Container>
+        </div>
       </body>
     </html>
   );
